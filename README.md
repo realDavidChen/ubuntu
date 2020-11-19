@@ -22,19 +22,34 @@ sudo apt install mplayer -y
 
 ### setting:
 sudo nano /etc/mplayer/mplayer.conf
+
 in the end to add line:
+
 nolirc=yes
 
 ## 5 create file: speech.sh
  
  sudo nano speech.sh
  
+ #!/bin/bash
+say() { local IFS=+;/usr/bin/mplayer -ao alsa -really-quiet -noconsolecontrols "https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&q=$*&tl=en"; }
+say $*
  
  
+ ## 6 git the file promission
  
  sudo chmod u+x speech.sh
- ls
- ./speechsh Look David
+ 
+ or more promission:
+ 
+ sudo chmod 777 speech.sh
+ 
+ ## 7 now you can test the reroult
+ 
+
+ ./speechsh Hello world
+ 
+ 
  ./speech.sh hello
  ls -la
  sudo chmod 777 speech.sh
