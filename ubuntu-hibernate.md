@@ -20,7 +20,7 @@ freeze mem disk
 grep swap /etc/fstab
 
 
-UUID=8383c877-1d99-407d-8aac-b32e5036f588 none
+UUID=************************************ none
 
 ### Copy the UUID value. You will need it later. Then run:
 
