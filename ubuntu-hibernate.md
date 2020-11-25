@@ -22,13 +22,18 @@
 - |64GB  |8GB   |72GB
 - |128GB |11GB  |139GB
 
-### check your swap status
+### check your linux system memory and swap status
+
+$ free -m
+
 
 $ cat /proc/swaps
 
-get swaps more detail
 
 $ grep Swap /proc/meminfo
+
+>> if you have not swap or no enough swap space, maybe you need to reinstall your Ubuntu(linux) system.
+If you have reserve enough swap space, good job! keep move on! 
 
 ### Install pm-utils and hibernate:
 
