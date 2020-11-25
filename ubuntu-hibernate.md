@@ -1,6 +1,10 @@
 
 # setting Ubuntu 20.04 hibernate
 
+### first and first, Then you install your Uuntu system, you have to   reserve enough swap space
+
+
+
 ### Assume you have a swap partition ready to use.
 
 ### Install pm-utils and hibernate:
@@ -36,6 +40,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash resume=UUID=YOUR_VALUE"
 ### Then, after saving the file and quitting the text editor, run:
 
 $ sudo update-grub
+
 To test it, run:
 
 $ sudo systemctl hibernate
