@@ -1,9 +1,10 @@
 
-# setting Ubuntu 20.04 hibernate
+# setting Ubuntu 20.04(or other linux system) hibernate
 
-### first and first, Then you install your Uuntu system, you have to   reserve enough swap space
+### Assume you have a swap partition ready to use and have to  reserve enough swap space
+### how many swap space enough for hibernate?
 
-### RAM Size	Swap Size (Without Hibernation)	 Swap size (With Hibernation)
+> RAM Size	Swap Size (Without Hibernation)	 Swap size (With Hibernation)
 
 - |RAM   |without |hibernation
 - |256MB |256MB |512MB
@@ -21,7 +22,10 @@
 - |64GB  |8GB   |72GB
 - |128GB |11GB  |139GB
 
-### Assume you have a swap partition ready to use.
+### check your swap status
+
+$ cat /proc/swaps
+$ grep Swap /proc/meminfo
 
 ### Install pm-utils and hibernate:
 
