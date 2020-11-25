@@ -32,7 +32,7 @@ $ cat /proc/swaps
 
 $ grep Swap /proc/meminfo
 
->> if you have not swap or no enough swap space, maybe you need to reinstall your Ubuntu(linux) system.
+> if you have not swap or no enough swap space, maybe you need to reinstall your Ubuntu(linux) system.
 If you have reserve enough swap space, good job! keep move on to next step! 
 
 ### Install pm-utils and hibernate:
