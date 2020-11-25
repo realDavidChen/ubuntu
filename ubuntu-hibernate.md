@@ -25,6 +25,9 @@
 ### check your swap status
 
 $ cat /proc/swaps
+
+get swaps more detail
+
 $ grep Swap /proc/meminfo
 
 ### Install pm-utils and hibernate:
