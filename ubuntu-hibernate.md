@@ -3,10 +3,10 @@
 
 ### first and first, Then you install your Uuntu system, you have to   reserve enough swap space
 
-RAM Size	Swap Size (Without Hibernation)	 Swap size (With Hibernation)
- 256MB	 256MB	 512MB
- 512MB	 512MB	 1GB
- 1GB	 1GB	 2GB
+- RAM Size	Swap Size (Without Hibernation)	 Swap size (With Hibernation)
+- 256MB	 256MB	 512MB
+- 512MB	 512MB	 1GB
+- 1GB	 1GB	 2GB
  2GB	 1GB	 3GB
  3GB	 2GB	 5GB
  4GB	 2GB	 6GB
