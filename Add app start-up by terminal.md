@@ -14,4 +14,9 @@ in the file end, add this code:
 export PATH="$PATH:/usr/local/go/bin"
 ```
 
-### 2. open your terminal, 
+### 2. open your terminal, type command again and then, type go, work!
+
+```
+$ export PATH="$PATH:/usr/local/go/bin"
+$ go
+
