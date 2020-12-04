@@ -142,7 +142,7 @@ sudo chmod 755 /etc/pm/sleep.d/20_custom-ehci_hcd
 
 ```
 
-### test again, run:
+** test again, run: **
 
 $ sudo update-grub
 
