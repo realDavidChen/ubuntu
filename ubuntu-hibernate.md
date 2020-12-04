@@ -142,9 +142,9 @@ sudo chmod 755 /etc/pm/sleep.d/20_custom-ehci_hcd
 
 ```
 
-$ sudo update-grub
+>test again, run:
 
-test again, run:
+$ sudo update-grub
 
 $ sudo systemctl hibernate
 
