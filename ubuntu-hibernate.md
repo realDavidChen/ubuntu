@@ -76,7 +76,7 @@ $ sudo systemctl hibernate
 > Right now no GNOME extension is working to have the hibernate option back in the system menu.
 
 
-# Ubuntu won't recover after hibernate mode solutions
+# How to solutions Ubuntu won't recover hibernate?
 
 ===================================================
 ### solutions methond 1. 
