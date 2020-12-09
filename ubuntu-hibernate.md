@@ -96,11 +96,11 @@ sudo systemctl hibernate
 ### solutions methond 2.
 
 
-#### Step 1: Open up a terminal and create a script file as follows:
+  #### Step 1: Open up a terminal and create a script file as follows:
 
 $ sudo gedit /etc/pm/sleep.d/20_custom-ehci_hcd
 
-#### Step 2: Copy the entire script below into the file you just created and save it:
+  #### Step 2: Copy the entire script below into the file you just created and save it:
 
 ```#!/bin/sh
 #inspired by http://art.ubuntuforums.org/showpost...0&postcount=19
