@@ -83,12 +83,18 @@ $ sudo systemctl hibernate
 
 try: Change the line GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" in '/etc/default/grub' to GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
 
+fix it and then in ternamial:
 
-**my system is xubuntu 20.04 . This method solved my problem
+sudo systemctl hibernate
+
+
+**my system is xubuntu 20.04 . This method solved my problem**
 
 
 
 ===========================================================
+### solutions methond 2.
+
 
 ### Step 1: Open up a terminal and create a script file as follows:
 
