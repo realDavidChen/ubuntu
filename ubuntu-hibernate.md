@@ -37,7 +37,7 @@ If you have reserve enough swap space, good job! keep move on to next step!
 
 ### Install pm-utils and hibernate:
 
-sudo apt install pm-utils hibernate
+$ sudo apt install pm-utils hibernate
 
 
 ### Then:
@@ -87,7 +87,11 @@ try: Change the line GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" in '/etc/default/
 
 fix it and then in ternamial:
 
-sudo systemctl hibernate
+$ sudo systemctl hibernate
+
+### hibernate system
+
+$ sudo pm-hibernate
 
 
 **my system is xubuntu 20.04 . This method solved my problem**
