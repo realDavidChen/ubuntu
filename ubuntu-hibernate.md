@@ -72,7 +72,9 @@ $ sudo update-grub
 To test it, run:
 
 $ sudo systemctl hibernate
+
 or
+
 $ sudo pm-hibernate
 
 > Right now no GNOME extension is working to have the hibernate option back in the system menu.
