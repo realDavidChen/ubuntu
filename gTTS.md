@@ -11,7 +11,13 @@ get help
 $ gtts-cli -h
 
 
-## 重要：进入 sudo vim /etc/speech-dispatcher/speechd.conf 把 # DefaultModule espeak-ng 注释掉
+#### note: disable # DefaultModule espeak-ng
+
+$ sudo nano /etc/speech-dispatcher/speechd.conf 
+
+``` 
+# DefaultModule espeak-ng 
+```
 
 > official website https://gtts.readthedocs.io/en/latest/index.html
 
