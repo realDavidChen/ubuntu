@@ -6,3 +6,7 @@ usage
 
 $ gtts-cli 'hello' --output hello.mp3
 
+get help 
+
+$ gtts-cli -h
+
