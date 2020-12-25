@@ -10,6 +10,9 @@ get help
 
 $ gtts-cli -h
 
+
+## 重要：进入 sudo vim /etc/speech-dispatcher/speechd.conf 把 es-speak 注释掉
+
 > official website https://gtts.readthedocs.io/en/latest/index.html
 
 
