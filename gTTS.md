@@ -10,3 +10,5 @@ get help
 
 $ gtts-cli -h
 
+> official website https://gtts.readthedocs.io/en/latest/index.html
+
