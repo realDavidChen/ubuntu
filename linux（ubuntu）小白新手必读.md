@@ -1,12 +1,12 @@
 # linux（ubuntu）小白新手必读.
 
-### 在文档中，看到 $ *** 是指命令行语言，要在 terminal中输入的内容
+### 在我的文件夹中的文件， $ *** 是指命令行语言，要在 terminal中输入的命令
 
 例 :
 
 $ touch 创建一个txt文件.txt
 
-请打开terminal命令行工具，粘帖：
+请打开terminal命令行工具打开（$号不用复制），粘帖：
 
 touch 创建一个txt文件.txt
 
