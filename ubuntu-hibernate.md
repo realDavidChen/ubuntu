@@ -87,7 +87,7 @@ RESUME=UUID=---YOUR_UUID_VALUE---
 
 $ sudo nano /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
 
-            /etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla
+ Copy and paste the following value and save the file
 
 ```
 
