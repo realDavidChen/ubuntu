@@ -24,6 +24,8 @@
 
 ### check your linux system memory and swap status
 
+$ sudo su
+
 $ free -m
 
 
