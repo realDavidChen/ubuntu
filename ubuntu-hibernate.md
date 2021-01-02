@@ -26,6 +26,10 @@
 
 $ sudo su
 
+$ whoami
+
+root
+
 $ free -m
 
 
@@ -65,11 +69,19 @@ $ sudo nano /etc/default/grub
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 so that it instead says:
 
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash resume=UUID=YOUR_VALUE"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash resume=UUID=*---YOUR_UUID_VALUE---"
 
 ### Then, after saving the file and quitting the text editor, run:
 
 $ sudo update-grub
+
+$ sudo nano /etc/initramfs-tools/conf.d/resume
+
+
+```
+RESUME=UUID=---YOUR_UUID_VALUE---
+
+```
 
 To test it, run:
 
