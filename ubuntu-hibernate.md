@@ -103,40 +103,8 @@ ResultActive=yes
 
 ```
 
-To test it, run:
+### To test it, run:
 
 $ sudo systemctl hibernate
 
-or
-
-$ sudo pm-hibernate
-
-> Right now no GNOME extension is working to have the hibernate option back in the system menu.
-
-
-# How to solutions Ubuntu won't recover hibernate?
-
-===================================================
-### solutions methond 1. 
-
-try: Change the line GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" in '/etc/default/grub' to GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
-
-fix it and then in ternamial:
-
-$ sudo update-grub
-
-$ sudo systemctl hibernate
-
-or
-
-$ sudo pm-hibernate
-
-
-
-
-**my system is xubuntu 20.04 . This method solved my problem good luck!**
-
-
-
-
-
+### Now restart your computer. next time. then you log out your computer , you can see the "hibernate" optoin on the list. just click "hibernate" button. your computer will into hibernation status.
