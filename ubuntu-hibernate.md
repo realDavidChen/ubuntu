@@ -87,6 +87,22 @@ RESUME=UUID=---YOUR_UUID_VALUE---
 
 $ sudo nano /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
 
+            /etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla
+
+```
+
+[Re-enable hibernate by default in upower]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=yes
+
+[Re-enable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate;org.freedesktop.login1.handle-hibernate-key;org.freedesktop.login1;org.freedesktop.login1.hibernate-m$
+ResultActive=yes
+
+```
+
 To test it, run:
 
 $ sudo systemctl hibernate
