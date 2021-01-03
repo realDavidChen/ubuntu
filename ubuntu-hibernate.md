@@ -107,4 +107,4 @@ ResultActive=yes
 
 $ sudo systemctl hibernate
 
-### Now restart your computer. next time. then you log out your computer , you can see the "hibernate" and "hybrid sleep" optoin on the list. just click "hibernate" button. your computer will into hibernation status(note: sometime. I select hibernate, but can't been wake up, if you have same issue. please try "hybrid sleep" mode ).
+### Now restart your computer. next time. then you log out your computer , you can see the "hibernate" and "hybrid sleep" optoin on the list. You can choose one of the options.(note: in my  expreience, sometime I select hibernate ,it can't been wake, if you have same issue.  you can try "hybrid sleep" mode) 
