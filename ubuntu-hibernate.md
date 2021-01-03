@@ -107,4 +107,10 @@ ResultActive=yes
 
 $ sudo systemctl hibernate
 
+$ sudo pm-hibernate
+
 ### Now restart your computer. next time. then you log out your computer , you can see the "hibernate" and "hybrid sleep" optoin on the list. You can choose one of the options.(note: in my  expreience, sometime I select hibernate ,it can't been wake, if you have same issue.  you can try "hybrid sleep" mode) 
+
+> hybrid sleep commend:
+
+$ sudo systemctl hybrid-sleep
