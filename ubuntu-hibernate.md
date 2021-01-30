@@ -116,3 +116,36 @@ $ sudo pm-hibernate
 > hybrid sleep commend:
 
 $ sudo systemctl hybrid-sleep
+
+
+
+
+===========================================================================
+===========================================================================
+
+## Collection problem solving
+
+
+With Dell notebooks I generally configure them like this:
+
+Open the terminal
+Install the necessary drivers with 
+
+$ ubuntu-drivers autoinstall
+
+Disable the fallback service with 
+
+$ sudo systemctl disable nvidia-fallback.service
+
+Then edit /etc/default/grub and add the line: 
+
+```
+GRUB_CMDLINE_LINUX="nouveau.blacklist=1"
+
+```
+
+Update Grub with: 
+
+$ sudo update-grub
+
+Reboot
