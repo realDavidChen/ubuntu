@@ -11,5 +11,10 @@ $ sudo apt install plank
 
 $ sudo apt install stacer
 
+### Nmap，也就是Network Mapper，最早是Linux下的网络扫描和嗅探工具包
+
+$ sudo apt  install nmap
+
+
 
 
