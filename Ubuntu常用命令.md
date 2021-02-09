@@ -25,10 +25,10 @@ $
 
 $ tree
 
-只显示指定的树状结构级别
+> 显示指定的树状结构级别
 
 $ tree / -L 1
 
-在Terminal命令行工具内的复制与粘帖
+> 在Terminal命令行工具内的复制与粘帖
 
 复制 ctrl+shift+c 粘帖 ctrl_shift+v 也可以用鼠标右键的复制与粘帖命令
