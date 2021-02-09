@@ -32,3 +32,7 @@ $ tree / -L 1
 > 在Terminal命令行工具内的复制与粘帖
 
 复制 ctrl+shift+c 粘帖 ctrl_shift+v 也可以用鼠标右键的复制与粘帖命令
+
+> 用命令行打开文件夹
+
+$ xdg-open .
