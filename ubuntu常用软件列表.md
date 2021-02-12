@@ -1,6 +1,13 @@
 ## ubuntu常用软件列表
 
 
+### Slimjet浏览器
+
+轻量级浏览器，低性能的电脑必备，可以和 chrome帐号互通，支持同步应用插件、收藏夹等，可以和chrome混合着用
+（注： chromium内核的浏览器，选择32位可以节省不少内存，64位的速度快一点点，可以看网上相关测评）
+
+下载地址 https://www.slimjet.com/en/dlpage.php   
+
 ### plank: 浮动常用工具列表： 
 
 $ sudo apt install plank
