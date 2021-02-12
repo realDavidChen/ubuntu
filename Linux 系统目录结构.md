@@ -9,11 +9,11 @@ ls / 
 
 你会看到如下图所示:
 
-![](../images/4_20.png)
+![](./images/4_20.png)
 
 树状目录结构：
 
-![](../images/d0c50-linux2bfile2bsystem2bhierarchy.jpg)
+![](./images/d0c50-linux2bfile2bsystem2bhierarchy.jpg)
 
 以下是对这些目录的解释：
 
