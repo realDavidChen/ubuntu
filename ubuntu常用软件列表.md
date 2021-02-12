@@ -23,5 +23,11 @@ $ sudo apt install stacer
 $ sudo apt  install nmap
 
 
+### 用命令行浏览文件夹，加密文件夹也可以以root身份直接访问
+
+$ sudo apt install nautilus
+
+> 基本使用方法  如： nautilus . 打开当前文件夹
+
 
 
