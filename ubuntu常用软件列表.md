@@ -29,5 +29,9 @@ $ sudo apt install nautilus
 
 > 基本使用方法  如： nautilus . 打开当前文件夹
 
+### cheese 摄像头软件
+
+sudo apt-get install cheese 
+
 
 
