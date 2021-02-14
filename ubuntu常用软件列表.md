@@ -34,12 +34,16 @@ $ sudo apt install nautilus
 sudo apt-get install cheese 
 
 
+
+
 # 开发软件
 
 ==============
 
-netstat 网络测试软件
+netstat 网络端口检测软件
 
 sudo apt install net-tools
+
+$ netstat -nltp
 
 
