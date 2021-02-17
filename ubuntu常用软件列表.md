@@ -33,6 +33,12 @@ $ sudo apt install nautilus
 
 sudo apt-get install cheese 
 
+### flameshot 超好用的屏幕截图软件
+
+$ sudo apt install flameshot
+
+为更加有效的截图或者演示，对flameshot做如下配置： 1.在 keyboard==》application shortcut中，把原来默认的截图软件快捷键 "print screen syspg"键释放给flameshot用. 2. 点+号 添加flameshot的软件位置路径 ``` /usr/bin/flameshot gui ``` 
+
 
 
 
