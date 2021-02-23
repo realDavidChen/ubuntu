@@ -37,7 +37,7 @@ sudo apt-get install cheese
 
 $ sudo apt install flameshot
 
-为更加有效的截图或者演示，对flameshot做如下配置： 1.在 keyboard==》application shortcut中，把原来默认的截图软件快捷键 "print screen syspg"键释放给flameshot用. 2. 点+号 添加flameshot的软件位置路径 ``` /usr/bin/flameshot gui ```  进入下一步，设置快捷键，按 ``` print screen syspq ``` 键，然后确定。 3. 需要截图时， 按 ``` print screen syspq ``` 开始截图，如果要添加文字，点文字图标，文字默认情况下字体很小，可以滚动鼠标的滚轮调大，右键可以选择颜色，按 ``` Esc ``` 键退出。
+为更加有效的截图或者演示，对flameshot做如下配置： 1.在 keyboard==》application shortcut中，把原来默认的截图软件快捷键 "print screen syspg"键释放给flameshot用. 2. 点+号 添加flameshot的软件位置路径 ``` /usr/bin/flameshot gui ```  进入下一步，设置快捷键，按 ``` print screen syspq ``` 键，然后确定。 3. 需要截图时， 按 ``` print screen syspq ``` 开始截图，如果要添加文字，点文字图标，文字默认情况下字体很小，可以滚动鼠标的滚轮调大，右键可以选择颜色，输入中文文字时看不到面板，如果输入完成后，无法的到你要的结果，可以尝试着配合数字选择键123..或者翻页键-+,来实现输入，按 ``` Esc ``` 键退出。
 
 
 
