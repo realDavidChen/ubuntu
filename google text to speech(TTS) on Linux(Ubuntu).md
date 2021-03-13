@@ -51,7 +51,7 @@ say $*
 
  or more promission:
 
- $ sudo chmod 777 speech.sh
+ $ sudo chmod 775 speech.sh
 
  ## Global run environment settings
 

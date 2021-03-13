@@ -44,6 +44,72 @@ $ sudo apt install flameshot
 
 $ sudo apt-get install -y translate-shell
 
+### calibre 电子书软件 支持格式齐全，特色，阅读风格，背景颜色可以改变，可以语音TTS阅读，窗口，自动阅读并翻页，编辑等
+
+ $ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
+
+### google translate 翻译工具自制
+
+1. 用chrome浏览器打开 https://translate.google.com/
+2. 左侧选择 English， 右侧选择Chinese（或者任何自定义互译的语言）
+3. 浏览器右上角settings => more tools => create shortcuts => open as window 勾上，这个时候，就已经在你的桌面上生成了一个快捷的应用了
+4. 从桌面点击图标，就可以打开简洁的翻译的窗口，你也可以通过系统搜索到 Google translate, 也可以把这个应用拖放到plank托盘，方便打开
+5. 也可以给这个应用设置一个快捷键，在系统的 keyboard 里面设置，把路径指向桌面（不是标准的应用，选择查看全部内容，即可显示，并选中，然后设置快捷键）
+6. 让软件置顶 alt+空格键  在弹出的选项中，选中 always on top
+
+### epy 用命令行阅读电子书（除了没有图片，其他体验都不错）
+
+https://github.com/realDavidChen/epy
+
+$ pip3 install epy-reader
+
+- 打开电子书的方法：
+  - $ ls    
+    显示当前目录下的电子书书名
+  - $ epy '电子书的书名'
+  
+  - 如果图书阅读到一半退出，下次再次打开只需要输入 $ epy 就可以
+  
+  - 快捷键： t 回到目录 箭头键上下选择 enter键确认 在进入图书内容的情况下，点 c 键可以切换背景颜色 箭头方向键换页或空格键翻页  退出epy ctrl+c
+- 支持tts阅读的 在打开的内容中，按快捷键 ! 开始朗读，当然，前提是要先安装TTS语音引擎
+```  $ apt install libttspico-utils sox ```
+
+跟多的快捷键的方法或配置，请看：
+Config file is available in json format which is located at:
+```
+Linux: cat ~/.config/epy/config.json or cat ~/.epy/config.json
+Windows: %USERPROFILE%\.epy\config.json
+  
+```
+本软件还支持tts发音的 
+
+
+### viu terminal命令行支持图片 
+
+git clone https://github.com/atanunq/viu.git
+
+From source (recommended)
+Installation from source requires a local Rust environment.
+
+```
+
+git clone https://github.com/atanunq/viu.git
+
+# Build & Install
+cd viu/
+cargo install --path .
+
+# Use
+viu img/giphy.gif
+```
+Or without cloning:
+```
+
+cargo install viu
+
+```
+
+
 **使用方法方法说明**
 
 - $ trans --help 获得帮助文件
