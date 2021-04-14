@@ -84,6 +84,28 @@ Windows: %USERPROFILE%\.epy\config.json
 本软件还支持tts发音的 
 
 
+### googler 命令行google搜索
+
+https://github.com/jarun/googler
+
+```install
+$ sudo apt update
+$ sudo apt install googler
+$ googler --version
+
+// get help
+
+$ googler -h
+
+```
+### 查看计算机硬件信息
+
+$ sudo apt-get install hardinfo
+
+打开软件直接输入 
+
+$ hardinfo
+
 ### viu terminal命令行支持图片 
 
 git clone https://github.com/atanunq/viu.git
