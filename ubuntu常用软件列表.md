@@ -1,5 +1,15 @@
 ## ubuntu 常用软件列表
 
+## Draw.io 画图软件
+
+install 安装
+
+$ sudo snap install drawio
+
+Uninstall 卸载
+
+$ sudo snap remove drawio
+
 ### Slimjet 浏览器
 
 轻量级浏览器，低性能的电脑必备，可以和 chrome 帐号互通，支持同步应用插件、收藏夹等，可以和 chrome 混合着用
@@ -11,7 +21,7 @@
 
 $ sudo apt install plank
 
-安装后把它添加到随机启动状态中,安装后，把常用软件拖到 plank 中，下次要使用的时候，鼠标滑动到窗口下方，自动浮现软件列表，从列表中移除，选中按钮左键不放拖动图标，放手即可移除
+安装后把它添加到随机启动状态中, 安装后，把常用软件拖到 plank 中，下次要使用的时候，鼠标滑动到窗口下方，自动浮现软件列表，从列表中移除，选中按钮左键不放拖动图标，放手即可移除
 
 ### Stacer 优化软件，超级好用
 
@@ -23,24 +33,27 @@ $ sudo apt install stacer
 
 安装完成系统以后，搜索 language support, 把中文的语言包安装上，安装完成后，就会有 sunpinyin 输入法，安装完成后，重新启动你的计算机
 
-  - 需要用到的输入法
+  + 需要用到的输入法
 
 ****
 
-  - 设置方法和流程
+  + 设置方法和流程
 
   1. 打开 input method configuration ,在input method标签中，只需要保留sunpinyin拼音输入法和英文键盘，其他的输入法都不想要
+
    
+
   2. global config, 把最底下的show advanced options先勾上
+
      1. trigger input methon: ctrl+space
      2. use extra trigger key only after using it to inactivate: 勾上（防止在打代码时，莫名其妙触发中文，只有在Ctrl+space才能启用中文，启用后有可以简单的点一下 shift输入英文）
      3. extra key for trigger input method: L_SHIFT
      4. enable hotkey to scroll between input method: 这个勾上，从中文切换到英文时，已录入的字母会自动转化为英文字母并上屏
 
   3. 跳转到addon标签 clondPinyin 排序选1,这样在输入的时候，默认把云输入法放在第一位，可以整句整句的录入，云拼音选择google，其他的打勾
-   
-   
 
+   
+   
 
 ####  google pinyin google 拼音输入法 
 
@@ -77,7 +90,7 @@ sudo apt-get install cheese
 
 $ sudo apt install flameshot
 
-为更加有效的截图或者演示，对 flameshot 做如下配置： 1.在 keyboard==》application shortcut 中，把原来默认的截图软件快捷键 "print screen syspg"键释放给 flameshot 用. 2. 点+号 添加 flameshot 的软件位置路径 `/usr/bin/flameshot gui` 进入下一步，设置快捷键，按 `print screen syspq` 键，然后确定。 3. 需要截图时， 按 `print screen syspq` 开始截图，如果要添加文字，点文字图标，文字默认情况下字体很小，可以滚动鼠标的滚轮调大，右键可以选择颜色，输入中文文字时看不到面板，如果输入完成后，无法的到你要的结果，可以尝试着配合数字选择键 123..或者翻页键-+,来实现输入，按 `Esc` 键退出。
+为更加有效的截图或者演示，对 flameshot 做如下配置： 1. 在 keyboard==》application shortcut 中，把原来默认的截图软件快捷键 "print screen syspg"键释放给 flameshot 用. 2. 点+号 添加 flameshot 的软件位置路径 `/usr/bin/flameshot gui` 进入下一步，设置快捷键，按 `print screen syspq` 键，然后确定。 3. 需要截图时， 按 `print screen syspq` 开始截图，如果要添加文字，点文字图标，文字默认情况下字体很小，可以滚动鼠标的滚轮调大，右键可以选择颜色，输入中文文字时看不到面板，如果输入完成后，无法的到你要的结果，可以尝试着配合数字选择键 123.. 或者翻页键-+, 来实现输入，按 `Esc` 键退出。
 
 ### trans 命令行翻译软件
 
@@ -102,23 +115,27 @@ https://github.com/realDavidChen/epy
 
 $ pip3 install epy-reader
 
-- 打开电子书的方法：
+* 打开电子书的方法：
 
-  - $ ls  
+  + $ ls  
+
     显示当前目录下的电子书书名
-  - $ epy '电子书的书名'
 
-  - 如果图书阅读到一半退出，下次再次打开只需要输入 $ epy 就可以
+  + $ epy '电子书的书名'
 
-  - 快捷键： t 回到目录 箭头键上下选择 enter 键确认 在进入图书内容的情况下，点 c 键可以切换背景颜色 箭头方向键换页或空格键翻页 退出 epy ctrl+c
+  + 如果图书阅读到一半退出，下次再次打开只需要输入 $ epy 就可以
 
-- 支持 tts 阅读的 在打开的内容中，按快捷键 ! 开始朗读，当然，前提是要先安装 TTS 语音引擎
-  ` $ apt install libttspico-utils sox`
+  + 快捷键： t 回到目录 箭头键上下选择 enter 键确认 在进入图书内容的情况下，点 c 键可以切换背景颜色 箭头方向键换页或空格键翻页 退出 epy ctrl+c
+
+* 支持 tts 阅读的 在打开的内容中，按快捷键 ! 开始朗读，当然，前提是要先安装 TTS 语音引擎
+
+ ` $ apt install libttspico-utils sox`
 
 跟多的快捷键的方法或配置，请看：
 Config file is available in json format which is located at:
 
-```
+``` 
+
 Linux: cat ~/.config/epy/config.json or cat ~/.epy/config.json
 Windows: %USERPROFILE%\.epy\config.json
 
@@ -130,7 +147,7 @@ Windows: %USERPROFILE%\.epy\config.json
 
 https://github.com/jarun/googler
 
-```install
+``` install
 $ sudo apt update
 $ sudo apt install googler
 $ googler --version
@@ -156,7 +173,7 @@ git clone https://github.com/atanunq/viu.git
 From source (recommended)
 Installation from source requires a local Rust environment.
 
-```
+``` 
 
 git clone https://github.com/atanunq/viu.git
 
@@ -170,7 +187,7 @@ viu img/giphy.gif
 
 Or without cloning:
 
-```
+``` 
 
 cargo install viu
 
@@ -178,11 +195,11 @@ cargo install viu
 
 **使用方法方法说明**
 
-- $ trans --help 获得帮助文件
-- $ trans # 回车后进入系统默认的语言翻译
-- $ trans :zh # 翻译成中文
-- $ trans :zh+en # 同时翻译成两种语言，可以自己定义
-- $ trans :zh -p -b # 混合设置范例： :zh 翻译成中文 -p 语音播放，-b 简洁模式
+* $ trans --help 获得帮助文件
+* $ trans # 回车后进入系统默认的语言翻译
+* $ trans :zh # 翻译成中文
+* $ trans :zh+en # 同时翻译成两种语言，可以自己定义
+* $ trans :zh -p -b # 混合设置范例： :zh 翻译成中文 -p 语音播放，-b 简洁模式
 
 **技巧补充**
 
@@ -190,7 +207,7 @@ cargo install viu
 
 1 设置别名
 $ vim ~/.bashrc
-2 在 vim 编译器下,输入 i 进行编写,找到下面代码,在下面添加即可
+2 在 vim 编译器下, 输入 i 进行编写, 找到下面代码, 在下面添加即可
 
 $ alias c='trans :zh -b'
 
