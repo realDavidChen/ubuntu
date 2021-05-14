@@ -62,6 +62,8 @@ $ sudo apt install stacer
 
 $ sudo apt install fcitx
 
+$ sudo apt-get install fcitx-config-gtk
+
 $ im-config
 
 ok --> yes --> fcitx --> ok
