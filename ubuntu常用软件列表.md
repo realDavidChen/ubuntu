@@ -17,6 +17,10 @@ $ sudo snap remove drawio
 
 下载地址 https://www.slimjet.com/en/dlpage.php
 
+### 屏幕绘图软件 gromit-mpx 
+
+sudo apt install gromit-mpx
+
 ### plank: 浮动常用工具列表：
 
 $ sudo apt install plank
@@ -44,7 +48,6 @@ $ sudo apt install stacer
    
 
   2. global config, 把最底下的show advanced options先勾上
-
      1. trigger input methon: ctrl+space
      2. use extra trigger key only after using it to inactivate: 勾上（防止在打代码时，莫名其妙触发中文，只有在Ctrl+space才能启用中文，启用后有可以简单的点一下 shift输入英文）
      3. extra key for trigger input method: L_SHIFT
@@ -120,7 +123,6 @@ $ pip3 install epy-reader
 * 打开电子书的方法：
 
   + $ ls  
-
     显示当前目录下的电子书书名
 
   + $ epy '电子书的书名'
@@ -136,7 +138,7 @@ $ pip3 install epy-reader
 跟多的快捷键的方法或配置，请看：
 Config file is available in json format which is located at:
 
-``` 
+```
 
 Linux: cat ~/.config/epy/config.json or cat ~/.epy/config.json
 Windows: %USERPROFILE%\.epy\config.json
@@ -149,7 +151,7 @@ Windows: %USERPROFILE%\.epy\config.json
 
 https://github.com/jarun/googler
 
-``` install
+```install
 $ sudo apt update
 $ sudo apt install googler
 $ googler --version
@@ -175,7 +177,7 @@ git clone https://github.com/atanunq/viu.git
 From source (recommended)
 Installation from source requires a local Rust environment.
 
-``` 
+```
 
 git clone https://github.com/atanunq/viu.git
 
@@ -189,7 +191,7 @@ viu img/giphy.gif
 
 Or without cloning:
 
-``` 
+```
 
 cargo install viu
 
@@ -221,6 +223,21 @@ trans 的具体用法， 输入 $ trans --help 自己查询
 
 $ source ~/.bashrc
 
+#  解决ubuntu默认摄像头问题（我的笔记本摄像头清晰度不够，以下是可以自动识别usb摄像头的问题）
+
+I think I have a solution. I don't know if you can get your laptop's own camera to work again, but at least I was able to make a USB as default.
+
+I did it like this:
+
+sudo rm /dev/video0
+After this I couldn't start Camorama Webcam Viewer at all.
+sudo chmod -R 777 /dev
+This gives you permission to change file names
+mv /dev/video1 /dev/video0
+This renames your usb camera to dev0
+
+After that I was able to see my USB camera automatically when I opened Camorama Webcam Viewer. I hope this helps.
+
 # 开发软件
 
 ==============
@@ -230,3 +247,7 @@ netstat 网络端口检测软件
 sudo apt install net-tools
 
 $ netstat -nltp
+
+# 翻墙代理软件 Qv2ray 
+
+https://qv2ray.net/
