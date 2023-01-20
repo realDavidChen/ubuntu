@@ -17,5 +17,17 @@ $ brew install scrcpy
 $ scrcpy
 
 ## connect TCP/IP (wireless)
+
+### method 1
+
+Go to android phone >> Settings >> Wireless & networks/WLAN, or Settings >> Network & Internet >> Wi-Fi >> Network detail >> IP address.
+
+$ adb tcpip 5555
+$ adb connect you-are-android-ip-address:5555  // if connected success, return : connected to 192.168.100.50:5555
+$ scrcpy 
+
+
+### method 2
+or
 $ scrcpy --tcpip    # without arguments
 
