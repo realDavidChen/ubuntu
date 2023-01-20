@@ -31,3 +31,11 @@ $ scrcpy
 or
 $ scrcpy --tcpip    # without arguments
 
+### method 3
+connect with ip
+$ scrcpy --tcpip=your-android-phone-ip  // default tcpip 5555
+or
+$ scrcpy --tcpip=your-android-phone-ip:5555
+
+
+
