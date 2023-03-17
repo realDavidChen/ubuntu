@@ -253,7 +253,7 @@ $ netstat -nltp
 https://qv2ray.net/
 
 # 用命令行与chatGPT交流
-
+```
 $ npm -g install terminalgpt
 or
 $ yarn global add terminalgpt
@@ -262,3 +262,4 @@ $ tgpt chat
 （首次使用会要求填写api)
 获取帮助
 $ tgpt
+```
