@@ -251,3 +251,14 @@ $ netstat -nltp
 # 翻墙代理软件 Qv2ray 
 
 https://qv2ray.net/
+
+# 用命令行与chatGPT交流
+
+$ npm -g install terminalgpt
+or
+$ yarn global add terminalgpt
+开始聊天
+$ tgpt chat
+（首次使用会要求填写api)
+获取帮助
+$ tgpt
