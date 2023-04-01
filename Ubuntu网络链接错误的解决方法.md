@@ -1,18 +1,26 @@
-#Ubuntu网络链接错误解决方法
 
-## 按网络图标，做常规检查，是否配置正常
-## 打开命令行工具，手动配置
 
-$ cd /etc
-$ ls
-$ sudo vim resolv.conf
-把里面的网络用配置用#先注释掉
-#nameserver 127.0.0.53
-#........
-添加自己的配置：
-nameserver 8.8.8.8
-nameserver 8.8.4.4
+## Ubuntu22.04 官方默认的配置网络文件，如果网络无法链接，修改此文件就可以得到解决
 
-vim保持并退出 :wq
+编辑文件 
+$ sudo vim /etc/netplan/01-network-manager-all.yaml
 
-打开浏览器，输入网站，如果能正常打开，问题解决
+把代码粘帖到代码区中
+
+```
+# Let NetworkManager manage all devices on this system
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    ens33:
+      dhcp4: yes
+
+```
+
+:wq 保存并退出
+### 测试网络
+$ sudo netplan try
+如果没有问题，它将返回配置接受消息。 如果配置文件未通过测试，它将恢复为以前的工作配置
+### 应用配置
+$ sudo netplan -d apply
