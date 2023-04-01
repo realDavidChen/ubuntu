@@ -31,6 +31,41 @@ $ sudo netplan try
 #### 应用配置
 $ sudo netplan -d apply
 
+#### 重启网络服务
+成功应用所有配置后，通过运行以下命令重新启动网络管理器服务：
+
+$ sudo systemctl restart network-manager
+#### 如果您使用的是 Ubuntu 服务器，请改用以下命令：
+
+$sudo systemctl restart system-networkd
+#### 验证 IP 地址
+现在要验证新配置是否成功应用，请运行以下命令来验证 IP 地址：
+
+$ ip a
+无论您拥有 Ubuntu 服务器还是台式机，您都可以简单地使用 Netplan 配置静态或动态 IP 寻址，而无需任何复杂的配置。
+
+
+
+
+
+### 二.在 Ubuntu 中配置静态 IP 地址
+要手动配置 IP 地址，请使用上述配置文件语法并添加 IP 地址、网关和 DNS 服务器信息。在这里您可以看到我的静态 IP 寻址配置文件：
+
+```
+
+# Let NetworkManager manage all devices on this system
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    ens33:
+      dhcp4: no
+      addresses: [192.168.72.150/24]
+      gateway4: 192.168.72.2
+      nameservers:
+        addresses: [8.8.8.8,8.8.4.4]
+
+```
 
 ### 
 
