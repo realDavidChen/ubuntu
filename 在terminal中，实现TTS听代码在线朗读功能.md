@@ -57,52 +57,8 @@ if __name__ == "__main__":
 
 # 简化听tts的流程
 
-## 版本一：朗读文本，并同时输出朗读的文本（要终止朗读，按ctr+c）
 
-```python
-#!/usr/bin/python3
-
-from gtts import gTTS
-import os
-import sys
-
-def main():
-    input_text = sys.stdin.read().strip()
-
-    # 打印原始文本内容
-    print("Original Text, Stop tts reader Ctrl + C:")
-    print(input_text)
-
-    # 按照常见标点分割文本
-    texts = []
-    temp_text = ""
-    punctuation = "。.，,！!？?；;"
-
-    for char in input_text:
-        if char in punctuation:
-            temp_text += char
-            texts.append(temp_text.strip())
-            temp_text = ""
-        else:
-            temp_text += char
-    if temp_text:
-        texts.append(temp_text.strip())
-
-    for text in texts:
-        if text:  # 确保文本非空
-            lang = 'en' if text.encode().isascii() else 'zh'
-            tts = gTTS(text=text.strip(), lang=lang)
-            tts.save("/tmp/output.mp3")
-            os.system("mpg123 /tmp/output.mp3 >/dev/null 2>&1")
-
-if __name__ == "__main__":
-    main()
-
-
-
-```
-
-## 版本二： 朗读文本，并输出播放器执行状态
+## 版本一： 朗读文本，并输出播放器执行状态
 
 为了实现通过 `man man | gtts` 直接在终端中听到 `gtts` 的朗读声音，你可以按照以下步骤进行操作：
 
@@ -197,4 +153,53 @@ man man | gtts
    man man | gtts
    ```
 
-这样，你就可以通过简单的 `man man | gtts` 命令在终端中听到 `gtts` 朗读的内容了。如果有其他问题或需求，请随时告诉我！
+这样，你就可以通过简单的 `man man | gtts` 命令在终端中听到 `gtts` 朗读的内容了。
+
+## 版本二：朗读文本，并同时输出朗读的文本（要终止朗读，按ctr+c）
+
+把python的文件，修改为：
+
+```python
+#!/usr/bin/python3
+
+from gtts import gTTS
+import os
+import sys
+
+def main():
+    input_text = sys.stdin.read().strip()
+
+    # 打印原始文本内容
+    print("Original Text, Stop tts reader Ctrl + C:")
+    print(input_text)
+
+    # 按照常见标点分割文本
+    texts = []
+    temp_text = ""
+    punctuation = "。.，,！!？?；;"
+
+    for char in input_text:
+        if char in punctuation:
+            temp_text += char
+            texts.append(temp_text.strip())
+            temp_text = ""
+        else:
+            temp_text += char
+    if temp_text:
+        texts.append(temp_text.strip())
+
+    for text in texts:
+        if text:  # 确保文本非空
+            lang = 'en' if text.encode().isascii() else 'zh'
+            tts = gTTS(text=text.strip(), lang=lang)
+            tts.save("/tmp/output.mp3")
+            os.system("mpg123 /tmp/output.mp3 >/dev/null 2>&1")
+
+if __name__ == "__main__":
+    main()
+
+
+
+```
+其他的设置方法，请直接参考方法一
+用这种方法处理的结果，就可以让terminal直接听到tts的同时，能够看到文本的输出
