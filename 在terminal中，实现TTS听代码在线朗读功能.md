@@ -56,3 +56,98 @@ if __name__ == "__main__":
 现在，这个脚本会在当前目录生成一个名为 `read_text.mp3` 的文件，并且播放它。你可以根据需要运行脚本来朗读不同的 `man` 页面或其他文本内容。
 
 # 简化听tts的流程
+
+为了实现通过 `man man | gtts` 直接在终端中听到 `gtts` 的朗读声音，你可以按照以下步骤进行操作：
+
+### 1. 创建 `gtts` Python 脚本
+
+创建一个名为 `gtts` 的 Python 脚本文件，内容如下：
+
+```python
+#!/usr/bin/env python3
+
+import sys
+from gtts import gTTS
+import os
+
+def main():
+    # 从标准输入读取数据
+    input_text = sys.stdin.read()
+
+    # 使用 gtts 生成语音文件
+    tts = gTTS(text=input_text, lang='en')
+    tts.save("/tmp/output.mp3")
+
+    # 播放生成的语音文件
+    os.system("mpg123 /tmp/output.mp3")
+
+if __name__ == "__main__":
+    main()
+```
+
+### 2. 设置脚本的可执行权限
+
+在终端中，使用以下命令设置脚本的可执行权限：
+
+```bash
+chmod +x gtts
+```
+
+### 3. 将脚本移动到系统路径
+
+将脚本移动到 `/usr/local/bin` 目录，这样就可以直接使用 `gtts` 命令：
+
+```bash
+sudo mv gtts /usr/local/bin/gtts
+```
+
+### 4. 使用脚本朗读内容
+
+现在，你可以通过以下命令直接使用 `gtts` 来朗读 `man man` 的内容：
+
+```bash
+man man | gtts
+```
+
+### 完整步骤总结
+
+1. 创建 `gtts` 脚本文件并写入以下内容：
+   ```bash
+   touch gtts
+   nano gtts
+   ```
+
+   内容如下：
+   ```python
+   #!/usr/bin/env python3
+
+   import sys
+   from gtts import gTTS
+   import os
+
+   def main():
+       input_text = sys.stdin.read()
+       tts = gTTS(text=input_text, lang='en')
+       tts.save("/tmp/output.mp3")
+       os.system("mpg123 /tmp/output.mp3")
+
+   if __name__ == "__main__":
+       main()
+   ```
+
+2. 设置脚本的可执行权限：
+   ```bash
+   chmod +x gtts
+   ```
+
+3. 将脚本移动到 `/usr/local/bin` 目录：
+   ```bash
+   sudo mv gtts /usr/local/bin/gtts
+   ```
+
+4. 使用 `gtts` 朗读 `man` 命令的内容：
+   ```bash
+   man man | gtts
+   ```
+
+这样，你就可以通过简单的 `man man | gtts` 命令在终端中听到 `gtts` 朗读的内容了。如果有其他问题或需求，请随时告诉我！
