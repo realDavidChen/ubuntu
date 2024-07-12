@@ -9,7 +9,7 @@ sudo apt-get install mpg123
 
 ```
 
-写一个python的脚本：
+写一个python的脚本read_text.py ：
 
 ```python
 from gtts import gTTS
