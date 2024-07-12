@@ -1,8 +1,13 @@
 # 在terminal中，实现TTS听代码在线朗读功能
 
-你的代码逻辑基本正确，但有一些地方需要修正。特别是，在播放音频文件时需要使用正确的文件路径，而且在主程序中调用 `read_text` 时应该传递 `output` 而不是 `read_text` 本身。
+### 安装gtts
 
-以下是修改后的代码：
+···bash
+pip install gtts
+sudo apt-get install mpg123
+```
+
+写一个python的脚本：
 
 ```python
 from gtts import gTTS
