@@ -1,10 +1,12 @@
 # 在terminal中，实现TTS听代码在线朗读功能
 
-### 安装gtts
+### 安装gtts 和播放器 mpg123
 
-···bash
+```bash
+
 pip install gtts
 sudo apt-get install mpg123
+
 ```
 
 写一个python的脚本：
